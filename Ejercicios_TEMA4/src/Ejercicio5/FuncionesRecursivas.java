@@ -38,9 +38,9 @@ public class FuncionesRecursivas {
 
 	
 	//Introducimos una función llamada potencia en ella calculamos el resultado de las potencias
-	static double potencia (double a , int n) {
+	static int potencia (int a , int n) {
 		//delcramos la variable resultado 
-		double resultado = 0;
+		int resultado = 0;
 		
 		if(n==0) { //Si n, la potencia es igual a 0 , el resultado es 1
 			resultado=1;
@@ -50,7 +50,7 @@ public class FuncionesRecursivas {
 		}else { //Si no se cumple lo anterior calculamos el resultado de la potencia
 		
 			for(int i=1;i<=n;i++) {
-				resultado=a*potencia(a,(int) resultado);
+				resultado=a*(potencia(a,resultado));
 			}
 		
 	}

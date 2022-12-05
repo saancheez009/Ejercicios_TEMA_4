@@ -14,7 +14,7 @@ public class main {
 	public static void main(String[] args) {
 	//Introducimos las variables numero, a y n
 	int numero; //Este número será introducido por el usuario 
-	double a; //Este número es la base 
+	int a; //Este número es la base 
 	int n; //Este número es el exponente
 	
 	//Introducimos e importamos el scanner para poder leer el código 
