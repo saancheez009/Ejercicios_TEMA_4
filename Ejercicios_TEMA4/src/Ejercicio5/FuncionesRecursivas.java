@@ -44,8 +44,14 @@ public class FuncionesRecursivas {
 		
 		if(n==0) { //Si n, la potencia es igual a 0 , el resultado es 1
 			resultado=1;
+		}
+		if(n==1){
+			resultado=a;
 		}else { //Si no se cumple lo anterior calculamos el resultado de la potencia
-			resultado=Math.pow(a, n);
+		
+			for(int i=1;i<=n;i++) {
+				resultado=a*potencia(a,(int) resultado);
+			}
 		
 	}
 		return resultado; //Devolvemos el resultado
